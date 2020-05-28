@@ -1,0 +1,9 @@
+name: swiss-forests
+channels:
+  - conda-forge
+dependencies:
+  - pip
+  - python=3
+  - ipykernel
+  - jupyter
+  - pylandstats=2.1.0
