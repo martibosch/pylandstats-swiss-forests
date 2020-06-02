@@ -1,4 +1,4 @@
-name: swiss-forests
+name: pylandstats-swiss-forests
 channels:
   - conda-forge
 dependencies:

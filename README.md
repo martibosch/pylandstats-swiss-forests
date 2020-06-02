@@ -1,7 +1,7 @@
-[![GitHub license](https://img.shields.io/github/license/martibosch/swiss-forests.svg)](https://github.com/martibosch/swiss-forests/blob/master/LICENSE)
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/martibosch/swiss-forests/master?filepath=notebooks)
+[![GitHub license](https://img.shields.io/github/license/martibosch/pylandstats-swiss-forests.svg)](https://github.com/martibosch/pylandstats-swiss-forests/blob/master/LICENSE)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/martibosch/pylandstats-swiss-forests/master?filepath=notebooks)
 
-# Swiss forests
+# PyLandStats Swiss forests
 
 Analysis with PyLandStats of forest evolution in the Swiss cantons of Bern, Fribourg, Neuchatel and Vaud.
 
@@ -15,7 +15,7 @@ This repository is part of the [YoMos 2020](https://www.yomos.org) workshop.
 
 Click the badge below, which will use [MyBinder](https://mybinder.org/) to launch a server with a Jupyter executable environment:
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/martibosch/swiss-forests/master?filepath=notebooks)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/martibosch/pylandstats-swiss-forests/master?filepath=notebooks)
 
 ### Option 2: locally
 
@@ -24,22 +24,23 @@ Click the badge below, which will use [MyBinder](https://mybinder.org/) to launc
 2. Clone the repository and change directory to the repository's root:
 
 ```bash
-git clone https://github.com/martibosch/swiss-forests
-cd swiss-forests
+git clone https://github.com/martibosch/pylandstats-swiss-forests
+cd pylandstats-swiss-forests
 ```
 
 3. Create the environment and activate it:
 
 ```bash
 conda env create -f environment.yml
-# the above command creates a conda environment named `swiss-forests`
-conda activate swiss-forests
+# the above command creates a conda environment named `pylandstats-swiss-forests`
+conda activate pylandstats-swiss-forests
 ```
 
-4. Register the IPython kernel of the `swiss-forests` environment:
+4. Register the IPython kernel of the `pylandstats-swiss-forests` environment:
 
 ```bash
-python -m ipykernel install --user --name swiss-forests --display-name "Python (swiss-forests)"
+python -m ipykernel install --user --name pylandstats-swiss-forests --display-name \
+    "Python (pylandstats-swiss-forests)"
 ```
 
 5. You can test that the installation worked by running the following command:
@@ -48,7 +49,7 @@ python -m ipykernel install --user --name swiss-forests --display-name "Python (
 python -c 'import pylandstats as pls ;  pls.Landscape("data/raw/AS18_17.tif") ; print("OK")'
 ```
 
-6. Run a local jupyter notebook server and you can now exectue [the notebooks of this repository](https://github.com/martibosch/swiss-forests/blob/notebooks):
+6. Run a local jupyter notebook server and you can now exectue [the notebooks of this repository](https://github.com/martibosch/pylandstats-swiss-forests/blob/notebooks):
 
 ```bash
 jupyter-notebook --notebook-dir=notebooks
